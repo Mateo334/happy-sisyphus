@@ -7,7 +7,8 @@ kramdown:
   parse_block_html: true
 
 # Theme settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: jekyll-theme-primer
+
 plugins:
   - jekyll-remote-theme
 
