@@ -1,7 +1,15 @@
 ---
-layout: home
+layout: page
 title: "Welcome to My Blog"
 permalink: /
 ---
 
-Hello! This is my blog. Here you can read posts about math, programming, and more.
+Welcome to my blog! Here are the latest posts:
+
+<ul>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+  </li>
+{% endfor %}
+</ul>
