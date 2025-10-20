@@ -1,28 +1,23 @@
-# Site settings
-# title: "My Math Blog"
-# email: "you@example.com"
-# description: "A blog for math and programming"
-# baseurl: ""      # leave empty for personal site
-# url: "https://yourusername.github.io"  # change to your URL
-# author:
-#   name: "Your Name"
-#   email: "you@example.com"
-
-# Build settings
+# Markdown and math settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll  # or any theme you like
-
-# Kramdown & MathJax settings
 kramdown:
   input: GFM          # GitHub Flavored Markdown
   math_engine: mathjax
   hard_wrap: false
   parse_block_html: true
 
+# Theme settings
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
+
+# Site info
+# title: "My Math Blog"
+# author:
+#   name: "Your Name"
+# description: "A blog for math and programming"
+# baseurl: ""          # leave empty for personal site
+# url: "https://yourusername.github.io"
+
 # Permalinks
 permalink: /:year/:month/:day/:title/
-
-# Collections (optional)
-collections:
-  posts:
-    output: true
