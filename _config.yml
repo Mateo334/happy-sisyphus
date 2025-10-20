@@ -18,6 +18,8 @@ plugins:
 # description: "A blog for math and programming"
 # baseurl: ""          # leave empty for personal site
 # url: "https://yourusername.github.io"
+baseurl: "/happy-sisyphus"
+url: "https://mateo334.github.io"
 
 # Permalinks
 permalink: /:year/:month/:day/:title/
